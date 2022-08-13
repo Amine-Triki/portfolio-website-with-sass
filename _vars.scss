@@ -1,0 +1,29 @@
+//varibales:
+// --color 
+$primary-color :#7a0d75;
+$secondary-color :#ffa600;
+$heading-color:#fff;
+$link-color:$heading-color;
+$link-color-hover:yellow;
+$sub-heading-color:#f4f4f4;
+$body-color :#f4f4f4;
+
+// -- Fonts
+$body-font :Helvetica , sans-serif;
+
+// set text color based on background
+@function text-color ($color){
+    @if(lightness($color) > 60){
+        @return #333 ;
+    }@else {
+        @return #FFF ;
+    }
+}
+
+
+
+// set text bg based on primary color
+@mixin background-color($color) {
+    background-color: $color;
+    color:text-color($color);
+}
