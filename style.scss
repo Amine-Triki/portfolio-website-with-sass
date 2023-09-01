@@ -48,7 +48,6 @@ body{
     //showcase-content
 
     &-content{
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -61,3 +60,16 @@ body{
     
 }
 
+@media  (max-width: 767px) {
+    .showcase{
+        @include background-color($media-color);
+
+        &-content{
+            display: block;
+            text-align: center;
+            margin: auto;
+           
+    }
+}
+}
+    

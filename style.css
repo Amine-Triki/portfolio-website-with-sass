@@ -60,11 +60,22 @@ body {
   color: yellow;
 }
 .showcase-content {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .showcase-content img {
   width: 38%;
+}
+
+@media (max-width: 767px) {
+  .showcase {
+    background-color: #a021c3;
+    color: #FFF;
+  }
+  .showcase-content {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
