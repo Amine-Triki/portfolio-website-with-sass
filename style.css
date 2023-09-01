@@ -41,7 +41,7 @@ body {
 .showcase {
   background-color: #7a0d75;
   color: #FFF;
-  height: 600px;
+  height: 100vh;
   padding: 15px 25px;
 }
 .showcase nav {
